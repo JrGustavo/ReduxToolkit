@@ -11,9 +11,6 @@ export const PokemonApp = () => {
     useEffect(() => {
         dispatch(getPokemons())
 
-
-
-
     }, [])
 
     return (
@@ -33,11 +30,8 @@ export const PokemonApp = () => {
             <button
              disabled={isLoading}
              onClick={() => dispatch(getPokemons(page))}
-
             >
-
             </button>
-
         </>
     )
 }
